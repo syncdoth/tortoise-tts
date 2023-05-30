@@ -11,6 +11,23 @@ I *finally* converted the "doc" to a arxiv entry: https://arxiv.org/abs/2305.072
 
 ## 이경영
 
+### Environment Setup
+
+```bash
+# cuda install
+conda install pytorch torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+# or...
+# MPS acceleration is available on MacOS 12.3+
+pip install torch torchaudio
+
+# Then,
+pip install -r requirements.txt
+
+# Then,
+pip install -e .
+```
+### Generate Voice
+
 * `voices/lky` 에 wav 있음.
 
 ```bash
