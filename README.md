@@ -31,7 +31,7 @@ pip install -e .
 * `voices/lky` 에 wav 있음.
 
 ```bash
-python tortoise/do_tts.py --text "You decided grow some balls huh?" --voice lky --preset high_quality
+python tortoise/do_tts.py --text "You must have forgotten my temper." --voice lky --preset high_quality
 ```
 
 ### Known Issues
