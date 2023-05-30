@@ -9,7 +9,19 @@ This repo contains all the code needed to run Tortoise TTS in inference mode.
 
 I *finally* converted the "doc" to a arxiv entry: https://arxiv.org/abs/2305.07243
 
-### Version history
+## 이경영
+
+* `voices/lky` 에 wav 있음.
+
+```bash
+python tortoise/do_tts.py --text "You decided grow some balls huh?" --voice lky --preset high_quality
+```
+
+### Known Issues
+
+- 한문장 넘어가면 목소리 유지가 안됨. 아마 한문장씩 끊어서 하는게 나을듯.
+
+## Version history
 
 #### v2.4; 2022/5/17
 - Removed CVVP model. Found that it does not, in fact, make an appreciable difference in the output.
